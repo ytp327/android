@@ -69,11 +69,10 @@ public class MainActivity extends AppCompatActivity {
         display(redCardOfB, "redB");
     }
 
-    public void yellowB(View view){
+    public void yellowB(View view) {
         yellowCardOfB += 1;
         display(yellowCardOfB, "yellowB");
     }
-
     public void reset(View view){
         scoreOfA = scoreOfB = 0;
         yellowCardOfA = yellowCardOfB = 0;

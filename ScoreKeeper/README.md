@@ -9,5 +9,5 @@ This Score Keeper Android App is used to track the score, yellow card and red ca
 	</ul>
 </p>
 <p align="center">
-  <img src = "ScoreKeeperUI.png"/>
+  <img src = "ScoreKeeperUI.jpg"/>
 </p>
