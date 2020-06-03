@@ -1,3 +1,4 @@
-# Court Counter
-![Image of Court Counter]
-(./CourtCounterUI.png)
+<h1> Court Counter </h1>
+<p align="center">
+  <img src = "CourtCounterUI.png"/>
+</p>
