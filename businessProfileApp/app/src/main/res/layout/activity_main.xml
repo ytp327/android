@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/siat"
+        android:id="@+id/SIATLogo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shenzhen Institute of Advanced Technology\nChinese Academy of Sciences"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/SIATLogo"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SIATBIO"
+        android:text="Address:1068 Xueyuan Avenue, Shenzhen, P.R.China
+\nTel:+86-755-86392288 \nWebsite:http://english.siat.cas.cn/
+\nDescription: One of the greatest research institute!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/image"
+        android:layout_above="@id/SIATBIO" />
+
+</RelativeLayout>

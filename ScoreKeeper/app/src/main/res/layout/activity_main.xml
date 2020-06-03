@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:id="@+id/team_a_score"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="GOAL！"
+                android:layout_marginBottom="24dp"
+                android:onClick="goalA"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/redcard"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/redcard"
+                    android:layout_weight="1"
+                    android:onClick="redA"/>
+
+                <TextView
+                    android:id="@+id/redcardNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/redcard"
+                    android:layout_alignTop="@id/redcard"
+                    android:layout_alignRight="@id/redcard"
+                    android:layout_alignBottom="@id/redcard"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/yellowcard"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/yellowcard"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:onClick="yellowA"/>
+                <TextView
+                    android:id="@+id/yellowcardNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/yellowcard"
+                    android:layout_alignTop="@id/yellowcard"
+                    android:layout_alignRight="@id/yellowcard"
+                    android:layout_alignBottom="@id/yellowcard"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:text="0"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:id="@+id/team_b_score"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="GOAL！"
+                android:layout_marginBottom="24dp"
+                android:onClick="goalB"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/redcardB"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/redcard"
+                    android:layout_weight="1"
+                    android:onClick="redB"/>
+
+                <TextView
+                    android:id="@+id/redcardNumB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/redcardB"
+                    android:layout_alignTop="@id/redcardB"
+                    android:layout_alignRight="@id/redcardB"
+                    android:layout_alignBottom="@id/redcardB"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/yellowcardB"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/yellowcard"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:onClick="yellowB"/>
+                <TextView
+                    android:id="@+id/yellowcardNumB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/yellowcardB"
+                    android:layout_alignTop="@id/yellowcardB"
+                    android:layout_alignRight="@id/yellowcardB"
+                    android:layout_alignBottom="@id/yellowcardB"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:text="0"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="RESET"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:textSize="32sp"
+        android:onClick="reset"/>
+</RelativeLayout>
