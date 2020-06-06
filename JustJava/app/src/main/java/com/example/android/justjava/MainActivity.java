@@ -7,9 +7,10 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    int quantity = 0;
+    int quantity = 2;
     String wc = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,28 +19,36 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void increment(View view){
-        quantity += 1;
+        if (quantity == 100) Toast.makeText(getApplicationContext(),
+                    "you can order at most 100 cups of coffee.", Toast.LENGTH_SHORT).show();
+        else quantity += 1;
         display(quantity);
     }
 
     public void decrement(View view){
-        quantity -= 1;
+        if (quantity == 1) Toast.makeText(getApplicationContext(),
+                    "you should at least order 1 cup of coffee.", Toast.LENGTH_SHORT).show();
+        else quantity -= 1;
         display(quantity);
     }
 
     public void summitOrder(View view){
-        int price = quantity * 5;
-        displayString(createOrderSummary(price));
+        displayString(createOrderSummary());
     }
 
-    private String createOrderSummary(int price){
+    private String createOrderSummary(){
         String cc = "false";
         CheckBox ChocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkBox);
         EditText nameInput = (EditText) findViewById(R.id.name);
-        if (ChocolateCheckBox.isChecked()) cc = "true";
+        int pricePerCup = 5;
+        if (ChocolateCheckBox.isChecked()) {
+            cc = "true";
+            pricePerCup += 2;
+        }
+        if (wc == "true") pricePerCup += 1;
         String name = nameInput.getText().toString();
         return "Name: "+ name + "\nAdd whipped cream? " + wc + "\nAdd chocolate? " + cc
-                +"\nQuantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
+                +"\nQuantity: " + quantity + "\nTotal: $" + pricePerCup * quantity + "\nThank you!";
     }
 
     private void display(int number) {
