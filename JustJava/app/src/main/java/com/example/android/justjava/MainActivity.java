@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,8 +35,10 @@ public class MainActivity extends AppCompatActivity {
     private String createOrderSummary(int price){
         String cc = "false";
         CheckBox ChocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkBox);
+        EditText nameInput = (EditText) findViewById(R.id.name);
         if (ChocolateCheckBox.isChecked()) cc = "true";
-        return "Name: Kaptain Kunal\nAdd whipped cream? "+ wc + "\nAdd chocolate? " + cc
+        String name = nameInput.getText().toString();
+        return "Name: "+ name + "\nAdd whipped cream? " + wc + "\nAdd chocolate? " + cc
                 +"\nQuantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
     }
 
