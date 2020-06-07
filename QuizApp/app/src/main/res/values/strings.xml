@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="name_hint">Name</string>
+    <string name="result_heading">Great work! The quiz result of </string>
+    <string name="submit_toast">Submitted successfully!</string>
+    <string name="quiz0">Welcome to the android quiz! What\'s your name?</string>
+    <string name="quiz1">What is the difference between margin and padding in android layout?</string>
+    <string name="quiz1A">Margin is specifying the extra space left on all four sides in layout</string>
+    <string name="quiz1B">Padding is used to offset the content of a view by specific px or dp</string>
+    <string name="quiz1C">Both A and B are correct</string>
+    <string name="quiz1D">None of the above</string>
+    <string name="quiz2">In styles, which attribute set the color of app bar?</string>
+    <string name="quiz2A">colorPrimary</string>
+    <string name="quiz2B">colorPrimaryDark</string>
+    <string name="quiz2C">colorAccent</string>
+    <string name="quiz3">What views are used in this app?</string>
+    <string name="quiz3A">TextView</string>
+    <string name="quiz3B">ImageView</string>
+    <string name="quiz3C">Button</string>
+    <string name="quiz3D">EditText</string>
+    <string name="quiz3E">CheckBox</string>
+    <string name="quiz3F">Spinner</string>
+    <string name="quiz4">Adb stands for?</string>
+    <string name="quiz4Answer">Android Debug Bridge</string>
+    <string name="quiz1Correct">Quiz1: Correct!</string>
+    <string name="quiz1Wrong">Quiz1: Wrong. The answer is C.</string>
+    <string name="quiz2Correct">Quiz2: Correct!</string>
+    <string name="quiz2Wrong">Quiz2: Wrong. The answer is A.</string>
+    <string name="quiz3Correct">Quiz3: Correct!</string>
+    <string name="quiz3Wrong">Quiz3: Wrong. The answer is TextView, Button, EditText, CheckBox.</string>
+    <string name="quiz4Correct">Quiz4: Correct!</string>
+    <string name="quiz4Wrong">Quiz4: rong. The answer is Android Debug Bridge.</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--    some quiz come from:
+                https://www.tutorialspoint.com/android/android_online_quiz.htm
+                https://www.onlineinterviewquestions.com/android-mcq/-->
+        <TextView
+            android:text="@string/quiz0"
+            style="@style/Description"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            style="@style/Description"
+            android:hint="@string/name_hint"
+            android:inputType="textMultiLine"/>
+
+        <TextView
+            android:text="@string/quiz1"
+            style="@style/Description"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16sp">
+            <RadioButton
+                android:id="@+id/quiz1A"
+                android:text="@string/quiz1A"
+                style="@style/Options" />
+            <RadioButton
+                android:id="@+id/quiz1B"
+                style="@style/Options"
+                android:text="@string/quiz1B" />
+            <RadioButton
+                android:id="@+id/quiz1C"
+                android:text="@string/quiz1C"
+                style="@style/Options" />
+            <RadioButton
+                android:id="@+id/quiz1D"
+                android:text="@string/quiz1D"
+                style="@style/Options" />
+        </RadioGroup>
+
+        <TextView
+            android:text="@string/quiz2"
+            style="@style/Description"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16sp">
+            <RadioButton
+                android:id="@+id/quiz2A"
+                android:text="@string/quiz2A"
+                style="@style/Options" />
+            <RadioButton
+                android:id="@+id/quiz2B"
+                style="@style/Options"
+                android:text="@string/quiz2B" />
+            <RadioButton
+                android:id="@+id/quiz2C"
+                android:text="@string/quiz2C"
+                style="@style/Options" />
+        </RadioGroup>
+        <TextView
+            android:text="@string/quiz3"
+            style="@style/Description"/>
+        <ImageView
+            android:layout_marginTop="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app"
+            android:layout_gravity="center"
+            android:background="@drawable/border"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/quiz3A"
+                    style="@style/Options"
+                    android:text="@string/quiz3A"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/quiz3B"
+                    style="@style/Options"
+                    android:text="@string/quiz3B"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/quiz3C"
+                    style="@style/Options"
+                    android:text="@string/quiz3C"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/quiz3D"
+                    style="@style/Options"
+                    android:text="@string/quiz3D"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/quiz3E"
+                    style="@style/Options"
+                    android:text="@string/quiz3E"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/quiz3F"
+                    style="@style/Options"
+                    android:text="@string/quiz3F"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:text="@string/quiz4"
+            style="@style/Description"/>
+        <EditText
+            android:id="@+id/quiz4Answer"
+            android:layout_width="match_parent"
+            style="@style/Description"
+            android:inputType="textMultiLine"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="SUBMIT"
+            android:onClick="submit"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/result"
+            android:text=""
+            style="@style/Options"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+</ScrollView>

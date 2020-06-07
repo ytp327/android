@@ -2,6 +2,7 @@ package com.example.android.justjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -33,7 +34,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void summitOrder(View view){
-        displayString(createOrderSummary());
+        EditText nameInput = (EditText) findViewById(R.id.name);
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("message/rfc822");
+        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{});
+        i.putExtra(Intent.EXTRA_SUBJECT, "JustJava order for " + nameInput.getText().toString());
+        i.putExtra(Intent.EXTRA_TEXT   , createOrderSummary());
+        try {
+            startActivity(Intent.createChooser(i, "Send mail..."));
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(getApplicationContext(), "There are no email clients installed.",
+                    Toast.LENGTH_SHORT).show();
+        }
     }
 
     private String createOrderSummary(){

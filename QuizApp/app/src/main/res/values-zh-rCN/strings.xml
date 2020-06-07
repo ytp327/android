@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">安卓小测</string>
+    <string name="name_hint">姓名</string>
+    <string name="result_heading">做得好！您的测试结果</string>
+    <string name="submit_toast">提交成功！</string>
+    <string name="quiz0">欢迎来到安卓小测！你的名字是？</string>
+    <string name="quiz1">安卓布局中的边距（margin）和填充（padding）有什么区别？</string>
+    <string name="quiz1A">边距指定布局中所有四个边上的剩余空间</string>
+    <string name="quiz1B">填充用于将视图的内容偏移特定的px或dp</string>
+    <string name="quiz1C">A和B都对</string>
+    <string name="quiz1D">以上全错</string>
+    <string name="quiz2">在样式中，哪个属性设置应用栏的颜色？</string>
+    <string name="quiz2A">colorPrimary</string>
+    <string name="quiz2B">colorPrimaryDark</string>
+    <string name="quiz2C">colorAccent</string>
+    <string name="quiz3">这个应用中有那些视图？</string>
+    <string name="quiz3A">TextView</string>
+    <string name="quiz3B">ImageView</string>
+    <string name="quiz3C">Button</string>
+    <string name="quiz3D">EditText</string>
+    <string name="quiz3E">CheckBox</string>
+    <string name="quiz3F">Spinner</string>
+    <string name="quiz4">Adb的英文全称是什么?</string>
+    <string name="quiz4Answer">Android Debug Bridge</string>
+    <string name="quiz1Correct">问题1： 正确！</string>
+    <string name="quiz1Wrong">问题1： 错误，正确答案是C</string>
+    <string name="quiz2Correct">问题2： 正确！</string>
+    <string name="quiz2Wrong">问题2： 错误，正确答案是A</string>
+    <string name="quiz3Correct">问题3： 正确！</string>
+    <string name="quiz3Wrong">问题3： 错误，正确答案是TextView, Button, EditText, CheckBox</string>
+    <string name="quiz4Correct">问题4： 正确！</string>
+    <string name="quiz4Wrong">问题4： 错误，正确答案是Android Debug Bridge</string>
+</resources>
