@@ -12,6 +12,7 @@ public class MusicItem {
         mArtistName = artistName;
         mAlbumName = albumName;
         mImageResourceId = imageResourceId;
+
     }
     public String getMusicName (){
         return mMusicName;

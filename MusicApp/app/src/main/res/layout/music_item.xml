@@ -5,8 +5,7 @@
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:minHeight="?android:attr/listPreferredItemHeight"
-    android:padding="16dp"
-    android:onClick="playMusic">
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/music_icon"
@@ -17,7 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:paddingLeft="16dp"
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/music_name"
@@ -43,4 +43,9 @@
 
     </LinearLayout>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_button"
+        android:text="PLAY" />
 </LinearLayout>

@@ -5,34 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Player"
-    android:orientation="vertical"
-    android:gravity="center">
-    <ImageView
+    android:orientation="vertical">
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/music_icon"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/music_name"
-        android:textSize="24sp"/>
+        android:text="BACK"
+        android:id="@+id/back_button"/>
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Player"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/music_icon" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/artist_name"/>
-        <TextView
+            android:id="@+id/music_name"
+            android:textSize="24sp"/>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:layout_marginLeft="16dp"
-            android:id="@+id/album_name"/>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/artist_name" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="16dp"
+                android:id="@+id/album_name"/>
+        </LinearLayout>
     </LinearLayout>
-
-
 </LinearLayout>

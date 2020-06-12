@@ -2,8 +2,11 @@ package com.example.android.musicapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,10 +40,19 @@ public class Player extends AppCompatActivity {
 
         // set variable image source according to the music name
         ImageView musicIconView = findViewById(R.id.music_icon);
-        Resources resources = getResources();
-        final int resourceId = resources.getIdentifier(musicName.toLowerCase(),
-                "drawable", getPackageName());
+        final int resourceId = getResources().getIdentifier("drawable/"
+                + musicName.toLowerCase(), null, getPackageName());
         musicIconView.setImageResource(resourceId);
+
+        // set back button
+        Button back = findViewById(R.id.back_button);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), MainActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
 }
