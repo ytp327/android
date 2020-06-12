@@ -1,5 +1,5 @@
 <h1>MusicApp</h1>
-<p>This app contains two activity: music list and player. We first start from the list a list with all music. When you click one of the music, you will jump to the corresponding player page using intent with parameters.</p>
+<p>This app contains two activity: music list and player. We first start from a screen with all music. When we click one of the music, we will jump to the corresponding player screen and play the music.</p>
 <p> In order to protect the copyright of songs, I use android versions to replace songs. Each song contains 4 elements: music cover image, music name, artist name and album name.</p>
 <p> <b>Knowledge including:</b> </p>
 <ul>
@@ -8,6 +8,12 @@
 	<li>Creating Custom Class to store data</li>
 	<li>Populating a ListView with an ArrayAdapter</li>
 </ul>
+<p>Todo:</p>
+<p><input type="checkbox">A music store screen for users to add songs to music list</p>
+<p><input type="checkbox">Music searching screen</p>
+<p><input type="checkbox">Detail screens for individual artists, albums</p>
+
+
 <p float="left;center">
   <img src=UI/1.jpg width="49%" height="49%"> &nbsp; <img src=UI/2.jpg width="49%" height="49%">
 </p>
