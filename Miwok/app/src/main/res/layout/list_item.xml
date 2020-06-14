@@ -6,17 +6,29 @@
     android:layout_height="wrap_content"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
-    android:orientation="vertical">
-    <TextView
+    android:orientation="horizontal">
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/miwok_text_view"
-        tools:text = "lutti"/>
-    <!--        tool:text is place holder-->
+        android:id="@+id/image_view"
+        tools:src = "@mipmap/ic_launcher" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/defualt_text_view"
-        tools:text = "one"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/miwok_text_view"
+            tools:text = "lutti"/>
+        <!--        tool:text is place holder-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/defualt_text_view"
+            tools:text = "one"/>
+    </LinearLayout>
 </LinearLayout>
