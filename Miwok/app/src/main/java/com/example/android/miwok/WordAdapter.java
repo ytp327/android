@@ -2,6 +2,7 @@ package com.example.android.miwok;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,10 +34,13 @@ public class WordAdapter extends ArrayAdapter <Word> {
                     R.layout.list_item, parent, false);
         }
         Word currentWord = getItem(position);
+        // set miwok word
         TextView miwok = listItemView.findViewById(R.id.miwok_text_view);
         miwok.setText(currentWord.getMiwok());
+        // set default translate word
         TextView defualt = listItemView.findViewById(R.id.defualt_text_view);
         defualt.setText(currentWord.getDefualt());
+        // set image of the word
         ImageView image = listItemView.findViewById(R.id.image_view);
         if (currentWord.hasImage()) {
             // If an image is available, display the provided image based on the resource ID

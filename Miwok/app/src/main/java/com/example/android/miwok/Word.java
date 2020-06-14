@@ -4,17 +4,18 @@ public class Word {
     private String miwok;
     private String defualt;
     private int imageId;
+    private int audioId;
     private boolean hasImageFlag;
 
-    public Word(String m, String d){
+    public Word(String m, String d, int a){
         miwok = m; defualt = d;
-        hasImageFlag = false;
+        hasImageFlag = false; audioId = a;
     }
 
     // constructor overloading
-    public Word(String m, String d, int i){
+    public Word(String m, String d, int i, int a){
         miwok = m; defualt = d; imageId = i;
-        hasImageFlag = true;
+        hasImageFlag = true; audioId = a;
     }
 
     public String getDefualt() {
@@ -30,4 +31,6 @@ public class Word {
     }
 
     public boolean hasImage(){ return hasImageFlag;}
+
+    public int getAudioId(){ return audioId;}
 }
