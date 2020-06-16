@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools = "http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,6 +17,8 @@
         android:id="@+id/vertical_linear_layout"
         android:paddingLeft="16dp"
         android:orientation="vertical"
+        android:layout_toRightOf="@id/image_view"
+        android:layout_centerVertical="true"
         android:layout_gravity="center_vertical">
 
         <TextView
@@ -27,8 +29,16 @@
         <!--        tool:text is place holder-->
 
         <TextView
-            style="@style/text"
             android:id="@+id/defualt_text_view"
-            tools:text = "one"/>
+            style="@style/text"
+            tools:text="one" />
     </LinearLayout>
-</LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_play_arrow"
+        android:layout_margin="16dp"/>
+</RelativeLayout>
