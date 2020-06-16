@@ -58,7 +58,7 @@ public class FamilyActivity extends AppCompatActivity {
             releaseMediaPlayer();
         }
     };
-    
+
     /**
      * Clean up the media player by releasing its resources.
      */
@@ -74,5 +74,14 @@ public class FamilyActivity extends AppCompatActivity {
             // is not configured to play an audio file at the moment.
             mp = null;
         }
+    }
+
+    @Override
+    protected void onStop() {
+        // Must inherit the super method onStop
+        super.onStop();
+
+        // release the MediaPlayer to avoid audio when we change the app
+        releaseMediaPlayer();
     }
 }

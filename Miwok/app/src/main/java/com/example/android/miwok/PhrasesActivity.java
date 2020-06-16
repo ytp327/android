@@ -75,4 +75,13 @@ public class PhrasesActivity extends AppCompatActivity {
             mp = null;
         }
     }
+
+    @Override
+    protected void onStop() {
+        // Must inherit the super method onStop
+        super.onStop();
+
+        // release the MediaPlayer to avoid audio when we change the app
+        releaseMediaPlayer();
+    }
 }
