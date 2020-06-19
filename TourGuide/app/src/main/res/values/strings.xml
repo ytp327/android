@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">TourGuide</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shamian_name">Shamian</string>
+    <string name="shamian_description">The island is a historical area that serves as a tranquil
+        reminder of the colonial European period, with quiet pedestrian avenues flanked by trees
+        and lined by historical buildings in various states of upkeep.</string>
+    <string name="shamian_location">North Bank of Baie Bond, Liwan District, Guangzhou</string>
 </resources>
