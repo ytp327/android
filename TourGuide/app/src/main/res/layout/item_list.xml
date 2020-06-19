@@ -8,26 +8,28 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/image"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/image_location">
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/image"
             tools:src = "@mipmap/ic_launcher" />
         <TextView
             android:id="@+id/location"
             style="@style/text"
+            android:layout_width="180dp"
             tools:text="Location"
             android:textStyle="italic"/>
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/vertical_linear_layout"
         android:paddingLeft="16dp"
         android:orientation="vertical"
-        android:layout_toRightOf="@id/image"
+        android:layout_toRightOf="@id/image_location"
         android:layout_centerVertical="true"
         android:layout_gravity="center_vertical">
 

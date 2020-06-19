@@ -7,4 +7,40 @@
         reminder of the colonial European period, with quiet pedestrian avenues flanked by trees
         and lined by historical buildings in various states of upkeep.</string>
     <string name="shamian_location">North Bank of Baie Bond, Liwan District, Guangzhou</string>
+
+    <string name="baiyun_name">Baiyun Mountain</string>
+    <string name="baiyun_description">Baiyun Mountain covers a large area of northeast Guangzhou.
+        It has been considered to be the top natural scenic part of the city since ancient times due
+        to its magnificence and loftiness. The name Baiyun Mountain means White Cloud Mountain because
+        the summit is wreathed in clouds whenever the sky clears after rain.</string>
+    <string name="baiyun_location">Baiyun S Ave, Baiyun Diet Culture Gallery, Baiyun, Guangzhou</string>
+
+    <string name="yuexiu_name">Yuexiu Park</string>
+    <string name="yuexiu_description">Yuexiu Hill once formed the northern end of the old walled city, though
+        most of the walls have been dismantled and the city has now expanded far beyond it.</string>
+    <string name="yuexiu_location">Yuexiu North, Yuexiu, Guangzhou</string>
+
+    <string name="nanyueking_name">Museum of the Nanyue King</string>
+    <string name="nanyueking_description">The Museum of the Western Han Dynasty Mausoleum of the
+        Nanyue King houses the 2,000-year-old tomb of the Nanyue King Zhao Mo in Guangzhou.
+        Zhao Mo ruled from 137 BC to 122 BC, and his tomb was discovered in downtown Guangzhou in 1983.</string>
+    <string name="nanyueking_location">Yuexiu, Guangzhou</string>
+
+    <string name="opera_name">Guangzhou Opera House</string>
+    <string name="opera_description">Located downstream of the Pearl River, the opera house looks
+        like two pebbles washed and smoothed by the river. The irregular-shaped buildings and the
+        towers of Guangzhou CBD look like a fantasy landscape.</string>
+    <string name="opera_location">1 Zhujiang W Rd, Tianhe District, Guangzhou</string>
+
+    <string name="financial_name">International Finance Center</string>
+    <string name="financial_description">Guangzhou International Finance Center is the most modern
+        area in Guangzhou. It gradually becomes the new center of Guangzhou. And many spectacular
+        skyscrapers are built in this area.</string>
+    <string name="financial_location">Tianhe, Guangzhou</string>
+
+    <string name="pearl_name">Pearl River Night View</string>
+    <string name="pearl_description">Pearl River is the mother river of Guangzhou. The city was
+        expanded rapidly along with the river. The night view of Pearl River is really great. You
+    can walk on the river bank or have a boat trip here.</string>
+    <string name="pearl_location">Pearl, Guangzhou</string>
 </resources>

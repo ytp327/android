@@ -37,9 +37,21 @@ public class fragment extends Fragment {
         if (tabNum == 0) {
             items.add(new Item(getString(R.string.shamian_name), getString(R.string.shamian_description),
                     getString(R.string.shamian_location),R.drawable.shamian));
-            items.add(new Item("2","2","3",R.drawable.donut));
-            items.add(new Item("2","2","3",R.drawable.donut));
-            items.add(new Item("2","2","3",R.drawable.donut));
+            items.add(new Item(getString(R.string.baiyun_name), getString(R.string.baiyun_description),
+                    getString(R.string.baiyun_location),R.drawable.baiyun));
+            items.add(new Item(getString(R.string.yuexiu_name), getString(R.string.yuexiu_description),
+                    getString(R.string.yuexiu_location),R.drawable.yuexiu));
+            items.add(new Item(getString(R.string.nanyueking_name), getString(R.string.nanyueking_description),
+                    getString(R.string.nanyueking_location),R.drawable.nanyueking));
+        }
+
+        else if (tabNum == 1) {
+            items.add(new Item(getString(R.string.pearl_name), getString(R.string.pearl_description),
+                    getString(R.string.pearl_location),R.drawable.pearl));
+            items.add(new Item(getString(R.string.financial_name), getString(R.string.financial_description),
+                    getString(R.string.financial_location),R.drawable.financial));
+            items.add(new Item(getString(R.string.opera_name), getString(R.string.opera_description),
+                    getString(R.string.opera_location),R.drawable.opera));
         }
 
         ItemAdapter itemsAdapter = new ItemAdapter(getContext(), items);
