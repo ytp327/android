@@ -43,4 +43,39 @@
         expanded rapidly along with the river. The night view of Pearl River is really great. You
     can walk on the river bank or have a boat trip here.</string>
     <string name="pearl_location">Pearl, Guangzhou</string>
+
+    <string name="roll_name">Vermicelli Rolls</string>
+    <string name="roll_description">A vermicelli roll is made from rice. Local chefs grind the rice
+        into rice butter, then steam the rice butter into glittering and translucent pieces, which
+        are then filled with pork, beef, shrimp, or other ingredients.</string>
+    <string name="roll_location">Guangzhou Restaurant or Taotao Ju </string>
+
+    <string name="wonton_name">Wonton Noodles</string>
+    <string name="wonton_description">The wontons have a pork or shrimp stuffing that is wrapped in
+        skins made of flour. The noodles are made only with egg and flour, and are squeezed with bamboo.
+        The soup is cooked with pork bones or fish, but the detailed recipe is kept a secret by restaurants.</string>
+    <string name="wonton_location">Zhuyuan Zhu Sheng Mian, Diyi Mian</string>
+
+    <string name="tea_name">Chrysanthemum Tea</string>
+    <string name="tea_description">Chrysanthemum tea is a flower-based infusion beverage made from
+        chrysanthemum flowers of the species Chrysanthemum morifolium or Chrysanthemum indicum, which
+        are most popular in East Asia, especially China. </string>
+    <string name="tea_location">Everywhere</string>
+
+    <string name="embroidery_name">Exquisite Embroidery</string>
+    <string name="embroidery_description">The city stands close to the Pearl River Delta which gives its
+        name to the local style of embroidery – one of the four most famous embroideries in China.
+        First made during the Song dynasty (960-1280), Pearl River Delta embroidery combines texture
+        and color with the most intricate stitch work. If you search hard, you might just find an
+        extra special piece – one that is double-sided! The design on both sides is exactly the same,
+        which is truly unbelievable! Designs usually portray birds, flowers, trees, and rivers.</string>
+    <string name="embroidery_location">Most Shopping Malls</string>
+
+    <string name="porcelain_name">Cantonese Porcelain</string>
+    <string name="porcelain_description">Cantonese porcelain is the characteristic style of ceramic
+        ware decorated in Guangzhou, the capital of Guangdong and (prior to 1842) the sole legal port
+        for export of Chinese goods to Europe. As such, it was one of the major forms of exportware
+        produced in China in the 18th and 20th centuries.</string>
+    <string name="porcelain_location">Most Shopping Malls</string>
+
 </resources>

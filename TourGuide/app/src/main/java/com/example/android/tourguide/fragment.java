@@ -53,6 +53,20 @@ public class fragment extends Fragment {
             items.add(new Item(getString(R.string.opera_name), getString(R.string.opera_description),
                     getString(R.string.opera_location),R.drawable.opera));
         }
+        else if (tabNum == 2) {
+            items.add(new Item(getString(R.string.roll_name), getString(R.string.roll_description),
+                    getString(R.string.roll_location),R.drawable.roll));
+            items.add(new Item(getString(R.string.wonton_name), getString(R.string.wonton_description),
+                    getString(R.string.wonton_location),R.drawable.wonton));
+            items.add(new Item(getString(R.string.tea_name), getString(R.string.tea_description),
+                    getString(R.string.tea_location),R.drawable.tea));
+        }
+        else if (tabNum == 3) {
+            items.add(new Item(getString(R.string.embroidery_name), getString(R.string.embroidery_description),
+                    getString(R.string.embroidery_location),R.drawable.embroidery));
+            items.add(new Item(getString(R.string.porcelain_name), getString(R.string.porcelain_description),
+                    getString(R.string.porcelain_location),R.drawable.porcelain));
+        }
 
         ItemAdapter itemsAdapter = new ItemAdapter(getContext(), items);
         ListView listView = view.findViewById(R.id.list);

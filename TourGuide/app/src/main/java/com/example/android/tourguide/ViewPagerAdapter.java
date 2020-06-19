@@ -33,8 +33,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         String tabName="";
         if (position == 0) tabName = "Daytime Attractions";
         else if (position == 1) tabName = "Night Sights";
-        else if (position == 2) tabName = "Restaurant";
-        else if(position == 3) tabName = "Hotels";
+        else if (position == 2) tabName = "Foods";
+        else if(position == 3) tabName = "Souvenirs";
         return tabName;
     }
 }
