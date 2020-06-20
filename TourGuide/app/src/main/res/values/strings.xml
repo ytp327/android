@@ -78,4 +78,10 @@
         produced in China in the 18th and 20th centuries.</string>
     <string name="porcelain_location">Most Shopping Malls</string>
 
+    <string name="tabNum">tabNum</string>
+    <string name="tab0">Daytime Attractions</string>
+    <string name="tab1">Night Sights</string>
+    <string name="tab2">Foods</string>
+    <string name="tab3">Souvenirs</string>
+
 </resources>

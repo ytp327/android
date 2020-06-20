@@ -32,7 +32,7 @@ public class fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_fragment, container, false);
-        int tabNum = getArguments().getInt("tabNum");
+        int tabNum = getArguments().getInt(getString(R.string.tabNum));
         ArrayList<Item> items = new ArrayList<>();
         if (tabNum == 0) {
             items.add(new Item(getString(R.string.shamian_name), getString(R.string.shamian_description),
