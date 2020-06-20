@@ -6,6 +6,7 @@
 	<li>Navigating between lists in Fragments using a ViewPager plus TabLayout</li>
 	<li>Selecting proper data structures to store lists of information</li>
 	<li>Creating Custom Class to store data</li>
+	<li>Providing different image resolutions for different Android devices. This is important, because it can increase the responding speed of the app!</li>
 </ul>
 <p>Todo:</p>
 <p><input type="checkbox">Create an Intent to link to google map when user click  locations</p>
