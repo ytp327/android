@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <EditTextPreference
+        android:defaultValue="YTP"
+        android:key="user_name"
+        android:selectAllOnFocus="true"
+        android:title="@string/user_name" />
+
+    <EditTextPreference
+        android:defaultValue="10"
+        android:inputType="number"
+        android:key="max_results"
+        android:selectAllOnFocus="true"
+        android:title="@string/max_results" />
+
+</PreferenceScreen>

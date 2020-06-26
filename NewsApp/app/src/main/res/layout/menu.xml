@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <item
+        android:icon="@drawable/ic_autorenew"
+        android:id="@+id/refresh"
+        android:orderInCategory="1"
+        android:title="@string/refresh"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:icon="@drawable/ic_magnify"
+        android:id="@+id/search"
+        android:orderInCategory="2"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
+        android:icon="@drawable/ic_settings"
+        android:id="@+id/settings"
+        android:orderInCategory="3"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom"/>
+
+</menu>
