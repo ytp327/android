@@ -157,11 +157,11 @@ public class NewsAppActivity extends AppCompatActivity
         newsAdapter.clear();
 
         if(news != null && !news.isEmpty()){ // results check
+            findViewById(R.id.no_result).setVisibility(View.GONE);
             newsAdapter.addAll(news);
         }
         else if (findViewById(R.id.no_internet).getVisibility() == View.GONE) {
-            noResult = (TextView) findViewById(R.id.no_result);
-            noResult.setVisibility(View.VISIBLE);
+            findViewById(R.id.no_result).setVisibility(View.VISIBLE);
         }
 
     }
