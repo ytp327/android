@@ -15,28 +15,40 @@
         android:background="@layout/circle_icon"
         android:gravity="center"
         android:padding="10dp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
         android:textColor="@android:color/white"
-        tools:text="Sports"/>
+        tools:text="Technology"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:orientation="vertical"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="17sp"
             tools:text="Hello World"/>
-        <TextView
-            android:id="@+id/time"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="2020-06-06T08:00:00Z"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2017-10-14T07:00:01Z"/>
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="YTP"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
     </LinearLayout>
 
 </LinearLayout>

@@ -115,8 +115,19 @@ public final class QueryUtils {
                 String title = current_News.getString("webTitle");
                 String time = current_News.getString("webPublicationDate");
                 String url = current_News.getString("webUrl");
+                String author = "";
+                if (current_News.has("tags")){
+                    // Extract the JSONArray associated with the key called "tags"
+                    JSONArray tagsArray = current_News.getJSONArray("tags");
+                    if (tagsArray.length() != 0) {
+                        // Extract the first JSONObject in the tagsArray
+                        JSONObject firstTagsItem = tagsArray.getJSONObject(0);
+                        // Extract the value for the key called "webTitle"
+                        author = firstTagsItem.getString("webTitle");
+                    }
+                }
 
-                News newsItem = new News(section, title, time, url);
+                News newsItem = new News(section, title, time, url, author);
 
                 news.add(newsItem);
             }

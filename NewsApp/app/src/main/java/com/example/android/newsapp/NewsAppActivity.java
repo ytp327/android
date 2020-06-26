@@ -84,7 +84,9 @@ public class NewsAppActivity extends AppCompatActivity
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
         if(networkInfo == null || !networkInfo.isConnected()){
-            Toast.makeText(getApplicationContext(),getString(R.string.no_internet),Toast.LENGTH_LONG).show();
+            TextView noInternet = findViewById(R.id.no_internet);
+            noInternet.setVisibility(View.VISIBLE);
+            // Toast.makeText(getApplicationContext(),getString(R.string.no_internet),Toast.LENGTH_LONG).show();
         }
     }
 
@@ -137,6 +139,7 @@ public class NewsAppActivity extends AppCompatActivity
         // createUrl
         Uri.Builder uriBuilder = Uri.parse(news_api_url).buildUpon();
         uriBuilder.appendQueryParameter("page-size", max_results);
+        uriBuilder.appendQueryParameter("show-tags", "contributor");
         if(searchQuery != null){
             uriBuilder.appendQueryParameter("q", searchQuery);
         }
@@ -155,7 +158,8 @@ public class NewsAppActivity extends AppCompatActivity
 
         if(news != null && !news.isEmpty()){ // results check
             newsAdapter.addAll(news);
-        } else {
+        }
+        else if (findViewById(R.id.no_internet).getVisibility() == View.GONE) {
             noResult = (TextView) findViewById(R.id.no_result);
             noResult.setVisibility(View.VISIBLE);
         }
